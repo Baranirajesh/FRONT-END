@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter</title>
+</head>
+<body>
+  <h1>FILTER</h1>
+  <div id="output"></div>
+
+  <script>
+    const users = [
+      { name: "arul", age: 23 },
+      { name: "thiru", age: 26 },
+      { name: "raja", age: 27 },
+      { name: "ram", age: 30 }
+    ];
+
+    const above25 = users.filter(user => user.age > 25);
+    const names = above25.map(user => user.name);
+
+    document.write("<p><b>Users above age 25:</b>" + names +"</p>");
+  </script>
+</body>
+</html>

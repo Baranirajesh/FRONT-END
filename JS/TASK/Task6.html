@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let products = [
+            {name:"Laptop", price: 900 },
+            {name:"Mouse", price: 25},
+            {name:"Monitor", price: 300}
+        ];
+
+        let result = products
+        .filter(product => product.price > 100)
+        .map(product => product.name);
+        document.write("<p><b>Products above $100:</b><br>" + result.join("<br>") +"</p>");
+    </script>
+</body>
+</html>

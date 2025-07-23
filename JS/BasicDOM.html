@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">This is the Title</h1>
+  <p>This is a Paragraph</p>
+  <button onclick="changeTitle()">Click Me!</button>
+
+  <script>
+    function changeTitle() {
+      // Accessing the DOM and changing content
+      // Document - Represents the whole HTML document
+
+      document.getElementById("title").textContent = "Title changed!!";
+      // change background color using DOM
+      document.body.style.backgroundColor = "lightblue";
+    }
+  </script>
+</body>
+</html>

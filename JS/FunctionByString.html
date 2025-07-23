@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{font-family: 'Courier New', Courier, monospace;padding: 20px;}
+    button{margin: 5px;padding: 10px;}
+    #output{margin-top: 20px;font-weight: bold;}
+  </style>
+</head>
+<body>
+  <h2> String method</h2>
+  <button onclick="StringToUppercase()">ToUpperCase</button>
+  <button onclick="stringtolowercase()">ToLowerCase</button>
+  <button onclick="stringSubstring()">Substring</button>
+  <button onclick="stringreplace()">stringreplace</button>
+  <button onclick="stringSplit()">Split</button>
+  <div id="output">Output will be appear here</div>
+  <script>
+    let fruits=['apple','banana','cherry'];
+    let sentence="Hai Welcome to SLA";
+    //string function
+    function StringToUppercase()
+    {
+      document.getElementById("output").innerHTML="ToUpperCase"+sentence.toUpperCase();
+    }
+    function stringtolowercase(){
+      document.getElementById("output").innerHTML="ToLowerCase"+sentence.toLowerCase();
+    }
+    function stringSubstring()
+    {
+      document.getElementById("output").innerHTML="Substring"+sentence.substring(6,11);
+    }
+    function stringreplace(){
+      document.getElementById("output").innerHTML="Replace"+sentence.replace("Welcome","Onboard");
+    }
+    function stringSplit()
+    {
+      document.getElementById("output").innerHTML="split by space"+sentence.split("");
+    }
+  </script>
+</body>
+</html>

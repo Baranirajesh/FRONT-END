@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Operators</title>
+</head>
+<body>
+  <h1>Check the Console for the Output</h1>
+  <script>
+let a=10;
+let b=20;
+console.log("\n Arithmetic Operator");
+console.log("a+b=",a+b);
+console.log("a+b=",a-b);
+console.log("a+b=",a*b);
+console.log("a+b=",a/b);
+console.log("a+b=",a%b);
+console.log("\n Assignment Operator");
+let x=5;
+x+=2;//x=x+2
+console.log("x after x+=2:",x);
+console.log("\n comparison operator");
+console.log("y=='7'", y=='7');//true(type coerecion)
+console.log("y=='7'" ,y=='7');//false(strict equality)
+console.log("y<=7:",y<=7);//true(true coereion) 
+
+console.log("Tenary operator");
+let age=18;
+let result=(age>=18?"Granted":"Denied");
+console.log("Result"+result);
+console.log("Logical operator");
+let isAdult="true";
+let hasID="false";
+console.log("isAdult && hasID" ,isAdult && hasID);//fasle
+console.log("isAdult || hasID" ,isAdult || hasID);//true
+console.log("!isAdult:",!isAdult);
+  </script>
+</body>
+</html>
