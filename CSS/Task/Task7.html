@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = [
+            { name: "Arul", age: 22},
+            { name: "Raja", age: 28},
+            { name: "Thiru", age:40},
+            { name: "Ram", age:24}
+        ];
+
+        const doubled = users.map(user =>({
+            name: user.name,
+            age: user.age *2
+        }));
+        const over50 = doubled.filter(user => user.age > 50)
+        const names = over50.map(user => user.name);
+        document.write("<p><b>users with doubled age over 50:</b><br>" + names.join("<br>") + "</p>");
+    </script>
+</body>
+</html>
